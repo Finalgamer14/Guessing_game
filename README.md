@@ -10,3 +10,5 @@ these change when a new number is entered.
 When the number is guessed, the user can see how many attempts did it take him/her.
 
 As much as I know this only works on windows.
+
+Download link for an executible: http://www.mediafire.com/download/7iiaddgefu67sm2/Guessing_game_v2.exe
