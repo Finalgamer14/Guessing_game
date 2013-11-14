@@ -37,7 +37,7 @@ int main()
         cout << "That's not a correct number. Hint: [" << m << "," << n << "]" << endl;
     }
     //If the number is guessed, this gets outputed
-    cout << "Number " << a << "is correct. Number of attempts: " << y << endl;
+    cout << "Number " << a << " is correct. Number of attempts: " << y << endl;
 
     system("pause");
     return 0;
