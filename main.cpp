@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include <cstdlib>
 #include <time.h>
 #include <limits>
@@ -39,6 +40,8 @@ int main()
     //If the number is guessed, this gets outputed
     cout << "Number " << a << " is correct. Number of attempts: " << y << endl;
 
-    system("pause");
+    cout << "Click 'Enter' to exit" << endl;
+    fflush(stdin);
+    cin.get();
     return 0;
 }
