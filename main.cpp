@@ -1,34 +1,33 @@
 #include <iostream>
 #include <stdio.h>
 #include <cstdlib>
-#include <time.h>
+#include <ctime>
 #include <limits>
 
 using namespace std;
 
 int main()
 {
-    int y = 0, m = 0, n = 100;
+    int y = 0, m = 0, n = 100; //used for storing attempts and hints
     int a, x;
     srand(time(NULL));
     x = rand() % 100 + 1;
 
-    //loop that tests if the guess is correct
-    while (a != x)
+    while (a != x) //loop for user input
     {
         cout << "Guess a number: ";
         cin >> a;
-        //loop for an invalid input (so people only use int numbers)
-        while (cin.fail())
+        
+        while (cin.fail()) //loop for an invalid input (so people only use int numbers)
         {
             cout << "Invalid Entry\nOnly enter full number." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cin >> a;
         }
-        y++; //counter for attempts
-        //Saves data for hint
-        if (a < x)
+        y++; //adds 1 to attempts
+
+        if (a < x) //changes the hint numbers for help
         {
             m = (m < a)? a : m;
         } else
